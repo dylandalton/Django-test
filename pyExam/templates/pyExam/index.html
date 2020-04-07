@@ -1,0 +1,9 @@
+{% if latest_article_list %}
+    <ul>
+    {% for question in latest_article_list %}
+        <li><a href="/pyExam/{{ Article.id }}/">{{ Article.heading_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
